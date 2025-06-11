@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --bg-color-chiaro: #ffffff;
+    --bg-color-scuro: #fafafa;
+    --paragraph-text-color:#71717a;
+    --title-color:#18181b;
+    --font-text: "Inter", sans-serif;
+    --font-title:"Inter Tight", sans-serif;
+    --max-with:1152px;
+}
