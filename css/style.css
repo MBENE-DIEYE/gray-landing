@@ -3,12 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-text);
 }
 body{
     background-color: var(--bg-color-chiaro);
 }
+
+.container{
+  /* max-width: var(--max-with); */
+  margin: auto;
+}
 #journey{
     /* background-color: blue; */
+    display: grid;
+    letter-spacing: -0.025em;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 1152px;
+}
+
+h1,h2,h3{
+  font-family: var(--font-title);
 }
 .journey__text{
      position: relative;
@@ -18,13 +33,24 @@ body{
 }
 .journey__text h2{
     color: var(--title-color);
+    font-size: 2.5rem;
+    line-height: 1.25;
+    letter-spacing: -0.017em;
+    margin-bottom: 1rem;
 }
 .journey__text p{
     color: var(--paragraph-text-color);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    letter-spacing: -0.017em;
 }
 .journey__input{
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #3f3f46;
 }
 .journey__input span{
     text-align: center;
@@ -37,19 +63,33 @@ body{
    display: flex;
    margin: 20px;
    padding: 3rem;
-   height: 35rem;
+   height: 38rem;
    
  }
  .journey__cards-item{
     background: var(--bg-color-scuro);
-     border: 1px solid black;
      border-radius: 0.5rem;
+     border-color: #e5e7eb;
+     border-style: solid;
      padding: 1.5rem;
      margin: 20px;
-     flex-direction: column;
      height: 100%;
-     gap: 1.5rem;
      position: relative;
+     width: 22rem;
+ }
+ #bg-color{
+  background-color: #27272a;
+ }
+ #color{
+  background-color: white;
+   color: var(--paragraph-text-color);
+ }
+ 
+ span.text-color{
+  color: white;
+ }
+ .journey__cards-item-derection{
+  position: relative;
  }
  .journey__cards-item h3 span{
     color: var(--paragraph-text-color);
@@ -66,6 +106,12 @@ body{
     letter-spacing: -0.017em;
     font-family: var(--font-text);
  }
+ .text-color{
+  color: white;
+ }
+ #span{
+  color: white;
+ }
  .journey__cards-item-text p{
     color: var(--paragraph-text-color);
  }
@@ -73,6 +119,7 @@ body{
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 1.5715;
+    font-family: var(--font-text);
  }
   .journey__cards-item ul {
     font-size: 0.875rem;
@@ -109,9 +156,125 @@ body{
    .journey__cards-item-btn a{
     position: absolute;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    color: #f4f4f5;
     background-color: var(--title-color);
-    margin: 10px;
-    color: white;
+    margin-top: 2rem;
     text-decoration: none;
-    /* border-radius: ; */
+    border-radius:0.5rem ;
+    width: 100%;
    }
+   .journey__list{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 42rem;
+   }
+    .journey__list-btn{
+      width: 100%;
+    /* display: flex; */
+    padding: 0.625rem 1rem;
+   
+   border-radius: 0.25rem;
+   text-align: left;
+   font-weight: 500;
+   align-items: center;
+   justify-content: space-between;
+ 
+ 
+    }
+
+
+   .journey__list-btn-item{
+    width: 100%;
+    display: flex;
+    padding: 0.637rem 1rem;
+   background-color: #f4f4f5;
+   border-radius: 0.25rem;
+   text-align: left;
+   font-weight: 500;
+   align-items: center;
+   justify-content: space-between;
+   margin: 8px;
+  border-style: solid;
+  border-color: #e5e7eb;
+  border: transparent;
+  font-size: 100%;
+   }
+  .journey__list-btn span{
+      font-family: var(--font-title);
+     }
+  .journey__list-btn-svg{
+    fill: #a1a1aa;;
+  }
+  .today__text{
+    text-align: center;
+   
+  }
+  .today__text h2{
+     color: var(--title-color);
+    font-size: 2.5rem;
+    line-height: 1.25;
+    letter-spacing: -0.017em;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+  .today__text p{
+     color: var(--paragraph-text-color);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    letter-spacing: -0.017em;
+    margin-bottom: 2rem;
+  }
+  .today__btn{
+    text-align: center;
+    font-size: 0.875rem;
+      border-width: 1px;
+     
+  }
+  .today__btn a{
+    text-decoration: none;
+     margin: 5px;
+  }
+  .today__btn #btn1{
+    background-color: var(--title-color);
+    color: #f4f4f5;
+    border-radius: 0.375rem;
+  
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  .today__btn #btn2{
+    background-color: white;
+    color: #52525b;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      border-style: solid;
+      border-width: 1px;
+      border-color:  #e5e7eb;
+      border-radius: 0.375rem;
+  }
+  #footer{
+    display: flex;
+    /* flex-direction: column; */
+    /* display: grid; */
+      margin-top: 8rem;
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+     border-top-width: 1px;
+     border-color: #e4e4e7;
+     gap: 0rem;
+     justify-content: space-between;
+  }
+  .footer__left{
+    flex-grow: 1;
+  }
+  .footer__left span{
+    color: var(--paragraph-text-color);
+  }
+
+  .footer__right{
+    grid-template-columns: repeat(12,minmax(0,1fr));
+    display: flex;
+    gap: 8rem;
+   
+  }
